@@ -1,0 +1,15 @@
+# Advanced manual fragment, not a complete config / 高级手动片段，并非完整配置。
+# Read docs/troubleshooting.*.md first / 先阅读中英详细说明。
+# Local ChatGPT login only; version-dependent / 仅限本地 ChatGPT 登录，依赖版本。
+# Put this root key BEFORE all tables / 根级键须置于所有表之前。
+model_provider = "openai-http"
+
+# Append this table only if the ID is unused / 仅在此 ID 未占用时追加该表。
+[model_providers.openai-http]
+name = "OpenAI via HTTP"
+base_url = "https://chatgpt.com/backend-api/codex"
+wire_api = "responses"
+requires_openai_auth = true
+supports_websockets = false
+supports_standalone_web_search = true
+

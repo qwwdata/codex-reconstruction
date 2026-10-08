@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+work/
+reconnect-backups/
+*.toml.bak
+*.toml.bak.json
+config.toml
+auth.json
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+.DS_Store
+Thumbs.db
+
